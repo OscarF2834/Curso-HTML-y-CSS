@@ -1,0 +1,12 @@
+.box{
+    padding: 50px;
+    width: 100px;
+    height: 100px;
+    background: hsl(210, 40%, 25%);
+    margin: 20px; 
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    border-top: 2px solid hsl(210, 40%, 45%);
+    font-family: 'Courier New', Courier, monospace;
+}
