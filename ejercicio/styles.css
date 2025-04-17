@@ -10,6 +10,8 @@
     margin: auto;
     border-width: 20px;
     border-radius:0%;
+    text-align: center;
+    border-radius: 10px;
 }
 
 body{
@@ -18,14 +20,14 @@ body{
     color: white;
 }
 
-h2{
+.card_description{
     font-size: large;
     font-weight: 100;
     letter-spacing: 2px;
-    background-color: black;
+    background-color: black;;
 }
 
-h1{
+.card_title{
     font-size: large;
     font-weight: 100;
     letter-spacing: 2px;
@@ -34,8 +36,23 @@ h1{
     text-align: center;
 }
 
-p{
+.card_content{
     font-size: 15px;
     padding: 20px;
     text-align: justify;
+    margin: 0;
+    margin-bottom: 0;
+}
+
+.imagen{
+    height: 250px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 0 40px #000;
+    border-style:inherit;
+    border-top: #000f;
+    border-right: #000f;
+    border-bottom: #000f;
+    border-left: #000f;
+    border-radius: 8px;
 }
