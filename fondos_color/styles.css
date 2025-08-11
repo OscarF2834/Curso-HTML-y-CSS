@@ -1,15 +1,21 @@
 body{
     background-color: #0f0;
+    margin: 0;
 }
 
 .box{
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 150px;
     margin: 20px;
     /*
     Propiedad mas basica de los fondos en css
     */
-    background-color: #f3ef;
+    background-color: transparent;
     position: absolute;
     top: 0;
+    background-image: url(https://images.unsplash.com/photo-1515879218367-8466d910aaa4?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZ3JhbWFjaW9ufGVufDB8fDB8fHww);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0;
 }
