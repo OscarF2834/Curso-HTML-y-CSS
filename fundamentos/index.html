@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="inicio">Solo puede existir un  h1 por cada documento html</h1>
+
+    <ul>
+        <h2>Contenido</h2>
+        <a href="index.html#etiquetas"><li>etiquetas de bloque y etiquetas de linea </li></a>
+        <a href="index.html#imagenes"><li>imagenes</li></a>
+        <a href="index.html#figuras"><li>figuras</li></a>
+        <a href="index.html#listasOr"><li>listas ordenadas</li></a>
+        <a href="index.html#listasDesor"><li>listas desordenadas</li></a>
+        <a href="index.html#listasDef"><li>listas de definicion</li></a>
+        <a href="index.html#tablas"><li>tablas</li></a>
+        <a href="index.html#enlaces"><li>enlaces</li></a>
+         <a href="index.html#elementosInt"><li>elementos interactivos</li></a>
+    </ul>
+
+    <header>Esta es la cabecera de la pagina o de una seccion</header>
+    <main>Seccion principal de la pagina, solo puede exister una por documento</main>
+    <footer>Representa un pie de pagina de una parte del sitio o de toda la pagina</footer>
+    <nav>Representa la navegacion</nav>
+    <article>Es un articulo, representa una seccion de autocontenido</article>
+    <aside>Representa un contenido secundario o complementario</aside>
+    <section>Representa una seccion de contenido generico</section>
+    <address>Representa una direccion o informacion de contacto</address>
+
+    <hr>
+
+    <h2 id="etiquetas">Etqietas de bloque vs etiquetas de linea</h2>
+    <div>Etiqueta de bloque por excelencia en DIV, es aquella que genera saltos de linea
+        con sus etiquetas hermanas
+    </div>
+    <span>la etiquta de linea por excelencia es la span</span>
+
+    <a href="index.html#inicio">☝️</a>
+
+    <hr>
+
+    <h2 id="imagenes">imagenes</h2>
+    <img src="/images/dinero.gif" alt="bolsa de dinero">
+    <img src="/images/pajaro.jpg" alt="imagen de tucan" width="600" height="400">
+    <img src="/images/yo.jpeg" alt="imagen de oscar">
+    <img src="/images/imagen1.png" alt="imagen de mariposa">
+
+    <a href="index.html#inicio">☝️</a>
+
+    <hr>
+
+    <h2 id="figuras">Figuras</h2>
+    <figure>
+        <img src="/images/pajaro.jpg" alt="imagen de pajaro tucan" width="500" height="500">
+        <figcaption>Imagen de un pajaro tucan bonito</figcaption>
+    </figure>
+
+    <a href="index.html#inicio">☝️</a>
+
+    <hr>
+
+    <h2 id="listasOr">Listas ordenadas</h2>
+    <h3>Las estaciones del año</h3>
+
+    <ol start="3" reversed type="I">
+        <li>Primavera</li>
+        <li>Verano</li>
+        <li>otoño</li>
+        <li>invierno</li>
+    </ol>
+
+    <a href="index.html#inicio">☝️</a>
+
+    <h2 id="listasDesor">Listas desordenandas</h2>
+
+    <ul type = "square">
+        <li>Terminar de hacer el curso de HTML</li>
+        <li>empezar con el de CSS</li>
+        <li>Hacer el de JS</li>
+    </ul>
+
+    <a href="index.html#inicio">☝️</a>
+
+    <h2 id="listasDef">Listas de definicion</h2>
+
+    <dl>
+        <dt>HTML</dt>
+        <dd>es un lenguaje de marcado que define el contedio de la web</dd>
+        <dt>CSS</dt>
+        <dd>ES un lenguaje de defincion que da estilos al codigo HTML</dd>
+        <dt>JavaScript</dt>
+        <dd>Es un lenguaje de programacion de la web</dd>
+    </dl>
+
+    <a href="index.html#inicio">☝️</a>
+
+    <hr>
+
+    <h2 id="tablas">Tablas</h2>
+
+    <table border="linea">
+        <tr>
+            <td>Nombre</td>
+            <td>Constelacion</td>
+            <td>Tipo</td>
+        </tr>
+        <tr>
+            <td>ikki</td>
+            <td>fenix</td>
+            <td>bronce</td>
+        </tr>
+        <tr>
+            <td>shina</td>
+            <td>ofiuko</td>
+            <td>plata</td>
+        </tr>
+        <tr>
+            <td>saga</td>
+            <td>geminis</td>
+            <td>dorado</td>
+        </tr>
+    </table>
+
+    <br>
+    <br>
+
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3">Tabla de los santos de atena</th>
+            </tr>
+            <th>Nombre</th>
+            <th>Contelacion</th>
+            <th>Tipo</th>
+        </thead>
+        <tbody>
+        <tr>
+            <td>ikki</td>
+            <td>fenix</td>
+            <td>bronce</td>
+        </tr>
+        <tr>
+            <td>shina</td>
+            <td>ofiuko</td>
+            <td>plata</td>
+        </tr>
+        <tr>
+            <td>saga</td>
+            <td>geminis</td>
+            <td>dorado</td>
+        </tr>
+        </tbody>
+        <tfoot></tfoot>
+    </table>
+
+    <a href="index.html#inicio">☝️</a>
+
+    <hr>
+
+    <h2 id="enlaces">Enlaces</h2>
+
+    <a href="https://jonmircha.com" target="_blank" rel="nofollow">Visita sitio web de jonmircha</a>
+    <br>
+    <a href="https://jonmircha.com" target="_blank">
+        <img src="/images/dinero.gif" alt="saco de dinero">
+    </a>
+
+    <a href="index.html#inicio"> ☝️</a>
+
+    <hr>
+
+    <h2 id="elementosInt">Elementos interactivos</h2>
+
+    <button onclick="alert('Haz clicqueado el boton')">Este es un boton</button>
+    <br>
+
+    <details>
+        <summary>Titulo del acordeon</summary>
+        <article>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+            Consequatur id reiciendis, quos facere corrupti ab esse veniam 
+            minima ipsa ipsam vel sed itaque aperiam beatae veritatis harum iusto accusantium? Omnis.
+            <img src="/images/imagen1.png" alt="foto">
+        </article>
+    </details>
+
+    <br>
+
+    <details>
+        <summary>Titulo del otro acordeon</summary>
+        <article>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Maiores praesentium vitae, quae nulla ipsum vero aspernatur
+             itaque quas necessitatibus excepturi repudiandae eligendi magni 
+             qui doloribus illo fugiat est quibusdam distinctio.
+        </article>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, dicta beatae! 
+            Magni, doloremque. Vero cupiditate non quo dolorum inventore accusantium perspiciatis!
+             Possimus accusamus harum natus tenetur nihil amet ipsam veritatis.</p>
+        <img src="/images/pajaro.jpg" alt="foto" width="700" height="700">
+        <figure>
+            <img src="/images/dinero.gif" alt="dinero">
+            <figcaption>Dinero de estados unidos</figcaption>
+        </figure>
+    </details>
+
+    <dialog>Esta es una ventana modal en HTML</dialog>
+    <a href="index.html#inicio"> ☝️</a>
+
+</body>
+</html>
