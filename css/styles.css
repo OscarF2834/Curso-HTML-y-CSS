@@ -1,45 +1,26 @@
-p{
-    color: blue;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-}
+/*Es una mala practica*/
+@import url();
+
 h1{
-    color: red;
+    border: solid;
+    color: black;
+    background-color: blue;
     text-align: center;
 }
 
-li{
-    color: rebeccapurple;
-}
-
-.faltante{
-    color: red;
-}
-
-#ingrediente-secreto{
-    color: cyan;
+p{
+    color: green;
 }
 
 /*
-propiedades de texto
+    Selectores basicos
+    etiquetas: Son elementos HTML
+    identificadores: en el HTMl se pone el id y en el CSS se nombre con #
+    clases: en el HTML se pone class y en el CSS se nombra con un punto (.)
 */
 
-.propiedad{
-    color: purple;
-    /*tipo de letra y propiedades del texto*/
-    font-family:'Courier New', Courier, monospace;
-    font-size: 14px;
-    font-weight:bold;
-    font-style: italic;
-    text-align: justify;
-    text-decoration: underline;
-    line-height: 1;
-    letter-spacing: 2px;
-    text-transform: capitalize;
-    text-shadow: 1px;
+/*Se considera una mala practica o antipatron*/
+#parrafo-dos{
+    background-color: skyblue;
 }
 
-p{
-    color: red;
-    width: 10px;
-    
-}
