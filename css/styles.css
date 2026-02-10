@@ -24,3 +24,16 @@ p{
     background-color: skyblue;
 }
 
+.hijos-directos > li{
+    background-color: red;
+}
+
+.hijos-descendientes b{
+    background-color: aqua;
+}
+
+/*Seletor de hermanos general*/
+.hermanos-general ~ li{
+    background-color: blueviolet;
+}
+
