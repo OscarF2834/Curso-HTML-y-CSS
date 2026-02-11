@@ -1,12 +1,27 @@
 /*Es una mala practica*/
 @import url();
 
+body{
+    background-color: rgb(161, 153, 153);
+}
+
 h1{
     border: solid;
     color: black;
-    background-color: blue;
+    background-color: skyblue;
     text-align: center;
 }
+
+h2{
+    border:crimson;
+    color: black;
+    background-color: rgb(237, 86, 69);
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 10px;
+}
+
+
 
 p{
     color: green;
@@ -138,4 +153,98 @@ espacios y que despues del texto en cuestion venga un guion medio*/
 
 .lista-pseudoclases li:nth-child(odd ){
     background-color: rgb(25, 157, 27);
+}
+
+/*Los pseudolementos nos permiten dar estilos a partes especificas de un elemento
+se usa el :: para diferenciarlo de las pseudoclases*/
+
+.saga-geminis::after{
+    content: "👾♏";
+}
+
+.saga-precio::before{
+    content: "$";
+    font-weight: bold;
+}
+
+.saga-precio::after{
+    content: "USD";
+    font-weight: bold;
+}
+
+.p-pseudolementos::first-line{
+    font-size: 24px;
+    font-style: italic;
+    font-weight: bold;
+    color: coral;
+}
+
+.p-pseudolementos::selection{
+    color: greenyellow;
+    background-color: black;
+}
+
+.input-pseudoelementos::placeholder{
+    color:green;
+    background-color: black;
+}
+
+/*
+agrupar selectores
+*/
+
+.form-agrupar-selectores input[type="text"],
+.form-agrupar-selectores input[type="email"],
+.form-agrupar-selectores textarea{
+    border-color: yellow;
+    border-width: 2px;
+    border-style: dashed;
+    background-color: black;
+    font-size: 20px;
+    display: block;
+    width: 300px;
+}
+
+/*El algoritmo de CSS es la forma en la que el navegador aplica los estilos al documento HTML
+es vital entender este concepto para que se pueda entender como se aplican y algunas ocasiones
+como se sobreescriben las reglas CSS*/
+
+#algoritmo-css{
+    background-color: rgb(173, 199, 247);
+    background: linear-gradient(green,black);
+    border-style: double;
+    border-width: 10px;
+    box-shadow: 20px;
+    border-radius: 10px;
+    border-color: red;
+    padding: 2%;
+    margin-top: 0%;
+    justify-content: center;
+    text-align: center;
+    padding-left: 4px;
+    box-sizing:border-box;
+    width: 50%;
+    margin: auto;
+}
+
+#algoritmo-css:hover{
+    border-inline:inherit;
+    border-top: inherit;
+    border-bottom: inherit;
+}
+
+.lista-algoritmo-css li{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:blue;
+    font-style: italic;
+    font-weight: bold;
+    padding-left: 4px;
+    padding: 10px;
+}
+
+.lista-algoritmo-css li:hover{
+    font-family: 'Courier New', Courier, monospace;
+    color: blueviolet;
+    font-style:italic;
+    background-color: chartreuse;
 }
