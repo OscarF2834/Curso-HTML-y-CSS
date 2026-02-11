@@ -248,3 +248,7 @@ como se sobreescriben las reglas CSS*/
     font-style:italic;
     background-color: chartreuse;
 }
+
+blockquote {
+    color: rgb(143, 42, 244);
+} 
