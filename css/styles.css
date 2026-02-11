@@ -37,3 +37,79 @@ p{
     background-color: blueviolet;
 }
 
+/*Selectores de atributos*/
+.selectores-atributos a[href]{
+    color:orangered
+}
+
+.selectores-atributos a[target = "_blank"]{
+    font-weight: bold;
+}
+
+/* el asterisco es un comodin que sirve para aplicar el estilo si contiene la
+palabra en cuestion*/
+.selectores-atributos a[href*= "jonmircha"]{
+    font-size: 24px;
+}
+
+/* el operador circunflejo es un comodin que sirve para aplicar el estilo si empieza la
+palabra en cuestion, osea tiene que empezar con el parametro que le estamos diciendo*/
+.selectores-atributos a[href^="http://"]{
+    text-decoration: none;
+}
+
+/* el operador dolar $ es un comodin que sirve para aplicar el estilo si finaliza la
+palabra en cuestion, osea tiene que terminar con el parametro que le estamos diciendo*/
+.selectores-atributos a[href$=".com"]{
+    background-color: blue;
+}
+
+/* el operador dolar ~ es un comodin que sirve para aplicar el estilo si contiene la
+palabra en cuestion, osea tiene que contener en cualquier lado con el parametro que le estamos diciendo*/
+.selectores-atributos a[class~="cursos"]{
+    background-color: rgb(22, 22, 58);
+}
+
+/* el comodin | aplica al estilo si contiene el texto en cuestion de una lista separadas por 
+espacios y que despues del texto en cuestion venga un guion medio*/
+
+.selectores-atributos a[class |= "menu"]{
+    font-style: italic;
+}
+
+/* Pseudoclases: Dan estilos dependiendo del contexto, posicion o estado del elemento*/
+/* El asterisco significa todo*/
+.form-pseudoclases *:required{
+    border-color: blueviolet;
+}
+
+.form-pseudoclases *:valid{
+    border-color: green;
+}
+
+.form-pseudoclases *:invalid{
+    border-color: red;
+}
+
+.form-pseudoclases *:focus{
+    background-color: skyblue;
+}
+
+.form-pseudoclases *:disabled{
+    background-color: pink;
+}
+
+.menu-pseudoclases a:hover{
+    color: orange;
+}
+
+.menu-pseudoclases a:visited{
+    color: olive;
+}
+
+.p-pseudoclase:hover{
+    color: blue;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    border-style: double;
+}
