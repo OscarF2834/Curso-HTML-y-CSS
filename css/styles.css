@@ -1,29 +1,29 @@
 /*Es una mala practica*/
 @import url();
 
-body{
+body {
     background-color: rgb(161, 153, 153);
 }
 
-h1{
+h1 {
     border: solid;
     color: black;
     background-color: skyblue;
     text-align: center;
 }
 
-h2{
-    border:crimson;
+h2 {
+    border: crimson;
     color: black;
     background-color: rgb(237, 86, 69);
     text-align: center;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     padding: 10px;
 }
 
 
 
-p{
+p {
     color: green;
 }
 
@@ -35,157 +35,157 @@ p{
 */
 
 /*Se considera una mala practica o antipatron*/
-#parrafo-dos{
+#parrafo-dos {
     background-color: skyblue;
 }
 
-.hijos-directos > li{
+.hijos-directos>li {
     background-color: red;
 }
 
-.hijos-descendientes b{
+.hijos-descendientes b {
     background-color: aqua;
 }
 
 /*Seletor de hermanos general*/
-.hermanos-general ~ li{
+.hermanos-general~li {
     background-color: blueviolet;
 }
 
 /*Selectores de atributos*/
-.selectores-atributos a[href]{
-    color:orangered
+.selectores-atributos a[href] {
+    color: orangered
 }
 
-.selectores-atributos a[target = "_blank"]{
+.selectores-atributos a[target="_blank"] {
     font-weight: bold;
 }
 
 /* el asterisco es un comodin que sirve para aplicar el estilo si contiene la
 palabra en cuestion*/
-.selectores-atributos a[href*= "jonmircha"]{
+.selectores-atributos a[href*="jonmircha"] {
     font-size: 24px;
 }
 
 /* el operador circunflejo es un comodin que sirve para aplicar el estilo si empieza la
 palabra en cuestion, osea tiene que empezar con el parametro que le estamos diciendo*/
-.selectores-atributos a[href^="http://"]{
+.selectores-atributos a[href^="http://"] {
     text-decoration: none;
 }
 
 /* el operador dolar $ es un comodin que sirve para aplicar el estilo si finaliza la
 palabra en cuestion, osea tiene que terminar con el parametro que le estamos diciendo*/
-.selectores-atributos a[href$=".com"]{
+.selectores-atributos a[href$=".com"] {
     background-color: blue;
 }
 
 /* el operador dolar ~ es un comodin que sirve para aplicar el estilo si contiene la
 palabra en cuestion, osea tiene que contener en cualquier lado con el parametro que le estamos diciendo*/
-.selectores-atributos a[class~="cursos"]{
+.selectores-atributos a[class~="cursos"] {
     background-color: rgb(22, 22, 58);
 }
 
 /* el comodin | aplica al estilo si contiene el texto en cuestion de una lista separadas por 
 espacios y que despues del texto en cuestion venga un guion medio*/
 
-.selectores-atributos a[class |= "menu"]{
+.selectores-atributos a[class |="menu"] {
     font-style: italic;
 }
 
 /* Pseudoclases: Dan estilos dependiendo del contexto, posicion o estado del elemento*/
 /* El asterisco significa todo*/
-.form-pseudoclases *:required{
+.form-pseudoclases *:required {
     border-color: blueviolet;
 }
 
-.form-pseudoclases *:valid{
+.form-pseudoclases *:valid {
     border-color: green;
 }
 
-.form-pseudoclases *:invalid{
+.form-pseudoclases *:invalid {
     border-color: red;
 }
 
-.form-pseudoclases *:focus{
+.form-pseudoclases *:focus {
     background-color: skyblue;
 }
 
-.form-pseudoclases *:disabled{
+.form-pseudoclases *:disabled {
     background-color: pink;
 }
 
-.menu-pseudoclases a:hover{
+.menu-pseudoclases a:hover {
     color: orange;
 }
 
-.menu-pseudoclases a:visited{
+.menu-pseudoclases a:visited {
     color: olive;
 }
 
-.p-pseudoclase:hover{
+.p-pseudoclase:hover {
     color: blue;
     font-size: 25px;
     font-family: 'Courier New', Courier, monospace;
     border-style: double;
 }
 
-.lista-pseudoclases li:first-child{
+.lista-pseudoclases li:first-child {
     color: green
 }
 
-.lista-pseudoclases li:last-child{
-    color:rgb(180, 188, 34)
+.lista-pseudoclases li:last-child {
+    color: rgb(180, 188, 34)
 }
 
-.lista-pseudoclases li:nth-child(3){
+.lista-pseudoclases li:nth-child(3) {
     color: navy;
 }
 
-.lista-pseudoclases li:nth-child(4n){
+.lista-pseudoclases li:nth-child(4n) {
     color: navy;
     font-size: 24px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.lista-pseudoclases li:nth-child(even){
+.lista-pseudoclases li:nth-child(even) {
     background-color: aquamarine;
 }
 
-.lista-pseudoclases li:nth-child(odd ){
+.lista-pseudoclases li:nth-child(odd) {
     background-color: rgb(25, 157, 27);
 }
 
 /*Los pseudolementos nos permiten dar estilos a partes especificas de un elemento
 se usa el :: para diferenciarlo de las pseudoclases*/
 
-.saga-geminis::after{
+.saga-geminis::after {
     content: "👾♏";
 }
 
-.saga-precio::before{
+.saga-precio::before {
     content: "$";
     font-weight: bold;
 }
 
-.saga-precio::after{
+.saga-precio::after {
     content: "USD";
     font-weight: bold;
 }
 
-.p-pseudolementos::first-line{
+.p-pseudolementos::first-line {
     font-size: 24px;
     font-style: italic;
     font-weight: bold;
     color: coral;
 }
 
-.p-pseudolementos::selection{
+.p-pseudolementos::selection {
     color: greenyellow;
     background-color: black;
 }
 
-.input-pseudoelementos::placeholder{
-    color:green;
+.input-pseudoelementos::placeholder {
+    color: green;
     background-color: black;
 }
 
@@ -195,7 +195,7 @@ agrupar selectores
 
 .form-agrupar-selectores input[type="text"],
 .form-agrupar-selectores input[type="email"],
-.form-agrupar-selectores textarea{
+.form-agrupar-selectores textarea {
     border-color: yellow;
     border-width: 2px;
     border-style: dashed;
@@ -209,9 +209,9 @@ agrupar selectores
 es vital entender este concepto para que se pueda entender como se aplican y algunas ocasiones
 como se sobreescriben las reglas CSS*/
 
-#algoritmo-css{
+#algoritmo-css {
     background-color: rgb(173, 199, 247);
-    background: linear-gradient(green,black);
+    background: linear-gradient(green, black);
     border-style: double;
     border-width: 10px;
     box-shadow: 20px;
@@ -222,33 +222,137 @@ como se sobreescriben las reglas CSS*/
     justify-content: center;
     text-align: center;
     padding-left: 4px;
-    box-sizing:border-box;
+    box-sizing: border-box;
     width: 50%;
     margin: auto;
 }
 
-#algoritmo-css:hover{
-    border-inline:inherit;
+#algoritmo-css:hover {
+    border-inline: inherit;
     border-top: inherit;
     border-bottom: inherit;
 }
 
-.lista-algoritmo-css li{
+.lista-algoritmo-css li {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color:blue;
+    color: blue;
     font-style: italic;
     font-weight: bold;
     padding-left: 4px;
     padding: 10px;
 }
 
-.lista-algoritmo-css li:hover{
+.lista-algoritmo-css li:hover {
     font-family: 'Courier New', Courier, monospace;
     color: blueviolet;
-    font-style:italic;
+    font-style: italic;
     background-color: chartreuse;
 }
 
 blockquote {
     color: rgb(143, 42, 244);
-} 
+}
+
+/*
+En el margin y en el padding tenemos lo siguiente:
+-si se tiene un unico valor: en el padding o en el margin, entonces toma los 4 lados de la
+ caja como una unica medida.
+-si se tiene dos valores: el primero numero coje los valores verticales(left,right) y el segundo
+ coje los valores horizontales(top,botton).
+-Si se tiene tres valores: el primer valor coje el valor de top, el segundo coje los valores verticales(left,right)
+ y el tercero coje el valor de abajo, osea el botom.
+-Y por ultimo si tiene 4 valores: se entiende como las manecillas del reloj, en el sentido horario.
+*/
+
+.caja-uno {
+    background-color: aqua;
+    font-family: monospace;
+    padding: 20px;
+    margin: 5px;
+}
+
+.caja-dos {
+    background-color: blue;
+    font-family: sans-serif;
+    padding: 20px;
+    margin: 5px;
+}
+
+/*
+Propiedad Display: 
+tiene estos valores: inline y blcok  inline-block:
+el inline block se comporta como un elemento de linea pero se acepta modificar sus dimensiones 
+osea el alto y el ancho.
+display none, el elemento se oculta.
+disply table: 
+display list-item
+flex y el grid
+*/
+
+.caja-none,
+.caja-linea-bloque,
+.caja-hidden {
+    background-color: darkolivegreen;
+    color: white;
+    width: 600px;
+    height: 300px;
+    border: medium solid black;
+}
+
+/*La propiedad visibility sirve para hacer el grado de visibilidad de un elemento*/
+.caja-hidden {
+    visibility: hidden;
+}
+
+/*propiedad overflow*/
+.overflow {
+    color: black;
+    background-color: cornflowerblue;
+    width: 200px;
+    height: 100px;
+    overflow: auto;
+    overflow-y: scroll;
+}
+
+/* Tamaño de la caja*/
+
+.box-sizing-content,
+.box-sizing-border {
+    background-color: deepskyblue;
+    width: 500px;
+    height: 250px;
+    padding: 10px;
+    border: thick solid black;
+}
+
+.box-sizing-border {
+    box-sizing: border-box;
+}
+
+.container-col-3 {
+    background-color: blueviolet;
+    width: 600px;
+    height: 300px;
+    margin-top: 20px;
+}
+
+.container-col-3>* {
+    width: 200px;
+    border: thin solid black;
+    float: left;
+}
+
+/*
+Float y Clear
+*/
+.container-float{
+    background-color: cornflowerblue;
+}
+
+.float-right{
+    float: right;
+}
+
+.float-left{
+    float: left;
+}
