@@ -1,0 +1,24 @@
+/*El valor static es el que esta por defecto en los navegadores para las etiquetas
+significa que respeta el flujo del documento HTML por lo que no se puede mover ni
+posicionar*/
+
+.static{
+    position: static;
+    background-color: red;
+    top:10px;
+    left:10px;
+}
+
+/*
+El posicionamiento relative: el elemento conserva las mismas dimensiones y posicionamiento original
+en el flujo del documento. Si se mueve toma como referencia su posicionamiento original.
+*/
+
+.relative{
+    background-color: brown;
+    position: relative;
+    width: 300px;
+    height: 50px;
+    top: 50px;
+    left: 50px;
+}
