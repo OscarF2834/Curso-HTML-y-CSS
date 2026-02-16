@@ -22,3 +22,53 @@ en el flujo del documento. Si se mueve toma como referencia su posicionamiento o
     top: 50px;
     left: 50px;
 }
+
+/* el z-indez es aquel que nos da la profundidad de los elementos posicionados, su valor por defecto es
+auto y este acepta numeros positivos, numeros negativos y cero
+
+a mayor valor del elemento esta mas al frente y a menor valor esta al fondo o atras.
+
+un elmento padre nunca podra estar por encima de un elemento hijo, sin embargo los elementos hijos
+si pueden dandoles un valor negativo y que el elmento padre no tenga un z-index
+*/
+
+.z-index-1,
+.z-index-2{
+    background-color: mediumaquamarine;
+    border: thin solid black;
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.z-index-1{
+    z-index: 1;
+    z-index: 0;
+}
+
+.z-index-2{
+    top: -200px;
+    left: 100px;
+    z-index: 2;
+    z-index: -1;
+}
+
+.z-index-parent{
+    background-color: mediumorchid;
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+
+.z-index-child{
+    background-color: mediumvioletred;
+    position: relative;
+    width: 150px;
+    height: 150px;
+    top: -75px;
+    left: 75px;
+    z-index: -3;
+}
+
+    
+
