@@ -1,12 +1,14 @@
-.box{
-    padding: 50px;
-    width: 100px;
-    height: 100px;
-    background: hsl(210, 40%, 25%);
-    margin: 20px; 
-    text-align: center;
-    color: #fff;
-    font-weight: bold;
-    border-top: 2px solid hsl(210, 40%, 45%);
-    font-family: 'Courier New', Courier, monospace;
+.color-transparent-current{
+    background-color: darkmagenta;
+    background-color: transparent;
+    background-color: currentColor;
+    color: orangered;
+    color: olive;
+    border: thick solid currentColor;
+}
+
+.opacity{
+    background-color: aqua;
+    border: thick solid rgb(234, 134, 178);
+    opacity: 0.7;
 }
