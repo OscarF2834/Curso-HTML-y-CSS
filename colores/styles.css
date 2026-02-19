@@ -12,3 +12,33 @@
     border: thick solid rgb(234, 134, 178);
     opacity: 0.7;
 }
+
+.rems{
+    background-color: rgb(234, 134, 178);
+    font-size: 24px;
+    padding: 1rem 0.5rem;
+    border: 5px solid rebeccapurple;
+}
+
+.rem-child{
+    background-color: cadetblue;
+    border: thick solid #5678ff;
+    margin: 0.5rem;
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+.chs{
+    background-color: cadetblue;
+    width: 10ch;
+    border: 5px dotted rebeccapurple;
+}
+
+.viewport{
+    background-color: darkcyan;
+    width: 50vw;
+    /*Recordar que la etiqueta body tiene margenes por defecto,
+    la barra de scroll forman parte del viewport*/
+    width: 100vw;
+    height: 100vh;
+}
