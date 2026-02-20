@@ -42,3 +42,15 @@
     width: 100vw;
     height: 100vh;
 }
+
+.var-custom-1{
+    --font-size: 32px;
+    --border: 7px solid black; 
+    --background : rgb(234,123,54);
+}
+
+.var-custom-2{
+    font-size: var(--font-size);
+    border: var(--border);
+    background-color: var(--background);
+}
