@@ -21,3 +21,16 @@ body{
     width: 400px;
     height: 400px;
 }
+.imagenes-container .imagen .nombre{
+    position: absolute;
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+    display: none;
+    min-width: 100px;
+    width: 150px;
+    margin-top: -55px;
+}
+.imagenes-container .imagen:hover .nombre{
+    display: inline;
+}

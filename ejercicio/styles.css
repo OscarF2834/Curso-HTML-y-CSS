@@ -1,58 +1,16 @@
-.card{
-    background: brown;
-    font-family: 'Courier New', Courier, monospace;
-    padding: 20px;
-    margin: 30px;
-    font-style: italic;
-    border:chartreuse;
-    border-color: black;
-    width: 400px;
-    margin: auto;
-    border-width: 20px;
-    border-radius:0%;
-    text-align: center;
-    border-radius: 10px;
-}
-
-body{
-    background-color: black;
-    font-family: 'Courier New', Courier, monospace;
+.box{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: red;
     color: white;
-}
-
-.card_description{
-    font-size: large;
-    font-weight: 100;
-    letter-spacing: 2px;
-    background-color: black;;
-}
-
-.card_title{
-    font-size: large;
-    font-weight: 100;
-    letter-spacing: 2px;
-    background-color: black;
-    background: black;
     text-align: center;
+    line-height: 100px
 }
 
-.card_content{
-    font-size: 15px;
-    padding: 20px;
-    text-align: justify;
-    margin: 0;
-    margin-bottom: 0;
-}
-
-.imagen{
-    height: 250px;
-    width: 250px;
-    text-align: center;
-    box-shadow: 0 0 40px #000;
-    border-style:inherit;
-    border-top: #000f;
-    border-right: #000f;
-    border-bottom: #000f;
-    border-left: #000f;
-    border-radius: 8px;
+#dos{
+    position: relative;
+    top: 20px;
+    left: 20px;
+    background-color: green;
 }
