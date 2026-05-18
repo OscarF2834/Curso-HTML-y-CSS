@@ -1,38 +1,48 @@
 body{
     background-color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.contenedor{
+.content{
     width: 300px;
-    height: 400px;
+    height: 510px;
     border-style: groove;
     border-color: white;
     border-width: 10px;
     margin: auto;
     border-radius: 10%;
-    background-color: blueviolet;
+    background: linear-gradient(to right,#2779F5, #fff);
     padding: 15px;
+    text-align: center;
+    box-shadow: 8px 3px 20px 10px #fff;
 }
 
-h1{
-    background-color: red;
+.card-image{
+    width: 110px;
+    height: 130px;
+    border-radius: 100%;
+}
+
+.card-title{
+    background-color: linear-gradient(red, green);
     padding-top: 10px;
-    padding: 10px;
+    padding: 5px;
     text-align: center;
 }
 
-h2{
-    background-color: green;
+.card-subtitle{
+    background: green;
     padding-top: 10px;
     text-align: center;
-    padding: 10px;
+    padding: 5px;
 }
 
-.contenido{
+.card-content{
     color: black;
     background-color: blue;
     height: 200px;
     padding: 10px;
     text-align: justify;
     border-radius: 15px;
+    font-size: 15px;
 }
