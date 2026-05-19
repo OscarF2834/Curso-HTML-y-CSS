@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Formulario de contacto</title>
+</head>
+<body>
+    <form class="form-contact">
+        
+        <h1 class="title-form">Formulario de contacto</h1></h1>
+
+        <label>Nombre</label>
+        <input type="text" placeholder="Nombre" class="content-name">
+
+        <label>Email</label>
+        <input type="email" placeholder="Email" class="content-email">
+
+        <label>Elija la opcion a desear: </label>
+        <select>
+            <option value="">Opcion 1</option>
+            <option value="">Opcion 2</option>
+            <option value="">Opcion 3</option>
+        </select>
+
+        <label for="referido">Seleccione al referido:</label>
+        <input type="text" list="Referidos" placeholder="seleccione una opcion" class="referidos" id="referido">
+        <datalist id="Referidos">
+            <option value="Un amigo me recomendo">Amigo</option>
+            <option value="Creador de contenido">Youtuber</option>
+            <option value="Programador y Desarrollador Web">Oscar Alvarado</option>
+        </datalist>
+
+        <label>Comentario</label>
+        <textarea placeholder="Inserta un comentario" class="content-coment"></textarea>
+        <label class="terms">Acepto los terminos y condiciones</label>
+        <input type="checkbox">
+
+    </form>
+</body>
+</html>
