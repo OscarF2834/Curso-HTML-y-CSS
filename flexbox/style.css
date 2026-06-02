@@ -1,0 +1,36 @@
+body { 
+    margin:0;
+    font-family: sans-serif;
+}
+
+div,body {
+    box-sizing: border-box;
+}
+
+.flexbox{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-flow: column wrap;
+    margin: 20px;
+    justify-content: start;
+    border: 3px solid rgb(57, 56, 56);
+    height: 500px;
+}
+
+.flex-item {
+    background-color: rgb(11, 79, 238);
+    margin: 10px;
+    text-align: center;
+    font-size: 100px;
+    width: 180px;
+    border: 3px solid rgb(57, 56, 56);
+}
+
+.flex-item:first-child {
+    background-color: rgb(106, 74, 136);
+}
+
+.flex-item:last-child {
+    background-color: aquamarine;
+}
