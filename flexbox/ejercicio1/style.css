@@ -1,0 +1,106 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1;
+}
+
+img{
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3px;
+}
+
+.menu ul {
+  list-style-type: none;
+}
+
+.hero-image{
+    min-height: 100vh;
+    background-image: url("https://pixabay.com/es/images/download/simon-google-76517_640.png");
+    background-repeat: repeat;
+    color: #fff;
+}
+
+.hero-image div{
+    min-height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0,0,0,.75);
+}
+
+.hero-image h1{
+    font-size: 5vw;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.titulares {
+  padding: 1rem;
+  background-color: #222;
+  color: #eee;
+}
+
+.flex-responsive{
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.flex-responsive-item{
+  border: 1px solid #f60;
+  flex: 1 1 200px;
+}
+
+@media screen and (min-width: 1024px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .menu ul {
+    display: flex;
+  }
+
+  .menu li{
+    padding: 0.5rem;
+  }
+
+  .flex-container{
+    display: flex;
+    align-items: center;
+  }
+
+  .flex-item{
+    flex: 0 0 50%;
+  }
+
+  .flex-order-1{
+    order: 1;
+  }
+
+  .flex-row-reverse{
+    flex-direction: row-reverse;
+  }
+}
