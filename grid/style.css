@@ -122,3 +122,54 @@ img {
   /*El atajo de grid area no funciona con los nombres que le ponemos a cada una de las lineas o 
   de las grid-lines que le pusimos anteriormente*/
 }
+
+.grid-areas{
+  display: grid;
+  grid-template-columns: 1fr 200px;
+  grid-template-rows: 100px repeat(2,1fr) 60px;
+  grid-template-areas: 
+  "header header"
+  "content sidebar"
+  /*El punto significa que eso va vacia esa celda*/
+  "content ."
+  "footer footer";
+}
+
+/*Aqui se le le pone a cada clase el grid area o el nombre que se le 
+puso en el template areas del componente padre: "grid-areas"*/
+.header{
+  grid-area: header;
+}
+
+.content{
+  grid-area: content;
+}
+
+.sidebar{
+  grid-area: sidebar;
+}
+
+.footer{
+  grid-area: footer;
+}
+
+.grid-implicit{
+  /*La diferencia entre grid y inline-grid, es que en una el contenedor se comporta
+  como un contenedor, mientras que el otro se comporte como contenedor de linea, es
+  importante la diferencia entre esos*/
+  display: grid;
+  /*display: inline-grid;*/
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(3, 200px)
+}
+
+.grid-flow{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  grid-template-rows: repeat(3,100px);
+  grid-auto-flow: row;
+  grid-auto-rows: 100px;
+  grid-auto-columns: 50px;
+}
+
+
